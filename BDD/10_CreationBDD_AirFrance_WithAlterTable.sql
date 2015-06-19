@@ -38,7 +38,7 @@ create table vol (
 go
 
 create table voyage (
-	numero int identity primary key,
+	numero int primary key,
 	aeroportDepart varchar(3) foreign key references aeroport(code) not null,
 	aeroportArrivee varchar(3) foreign key references aeroport(code) not null,
 )

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>055cdced-65d8-4144-a880-9dfe1421ff3e</ProjectGuid>
+    <ProjectGuid>{13AD3E79-8249-4E6C-87D3-0B3A92A532F1}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AirFrance_BibliothequeDeClasse_Test</RootNamespace>
@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AirFrance_BibliothequeDeClasse">
+      <HintPath>..\AirFrance_BibliothequeDeClasse\bin\Debug\AirFrance_BibliothequeDeClasse.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

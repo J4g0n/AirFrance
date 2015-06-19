@@ -11,8 +11,21 @@ namespace AirFrance_BibliothequeDeClasse_Test
     {
         static void Main(string[] args)
         {
-            Avion a = new Avion();
-            a.Consulter();
+            /*Avion a = new Avion();
+            a.Consulter();*/
+
+            List<Voyage> voy = Voyage.lstVoyages("CDG", "TKY");
+
+            foreach (Voyage v in voy)
+            {
+                Console.WriteLine("Voyage n°" + v.Numero);
+
+                foreach (Escale e in v.EscalesVoyage)
+                {
+                    Console.WriteLine("\tEtape n°" + e.Ordre + " vol n°" + e.NumeroVol);
+                }
+            }
+            Console.ReadKey();
         }
     }
 }

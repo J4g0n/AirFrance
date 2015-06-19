@@ -110,18 +110,22 @@ go
 
 
 insert into voyage (
+	numero,
 	aeroportDepart,
 	aeroportArrivee
 ) values (
+	1,
 	'CDG',
 	'PKN'
 )
 go 
 
 insert into voyage (
+	numero,
 	aeroportDepart,
 	aeroportArrivee
 ) values (
+	2,
 	'CDG',
 	'TKY'
 )
@@ -134,7 +138,7 @@ insert into escale (
 ) values (
 	1,
 	'FL035',
-	1
+	2
 )
 go 
 
@@ -145,7 +149,7 @@ insert into escale (
 ) values (
 	2,
 	'TK037',
-	1
+	2
 )
 go 
 

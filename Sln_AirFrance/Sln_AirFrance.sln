@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirFrance_BibliothequeDeClasse", "AirFrance_BibliothequeDeClasse\AirFrance_BibliothequeDeClasse.csproj", "{879CBD3F-94B4-4889-921E-78D790FFB1CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirFrance_BibliothequeDeClasse_Test", "AirFrance_BibliothequeDeClasse_Test\AirFrance_BibliothequeDeClasse_Test.csproj", "{13AD3E79-8249-4E6C-87D3-0B3A92A532F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirFrance_Desktop", "AirFrance_Desktop\AirFrance_Desktop.csproj", "{27914323-967B-4A91-AFAA-90729C907F2B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{879CBD3F-94B4-4889-921E-78D790FFB1CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{879CBD3F-94B4-4889-921E-78D790FFB1CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{879CBD3F-94B4-4889-921E-78D790FFB1CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13AD3E79-8249-4E6C-87D3-0B3A92A532F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13AD3E79-8249-4E6C-87D3-0B3A92A532F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13AD3E79-8249-4E6C-87D3-0B3A92A532F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13AD3E79-8249-4E6C-87D3-0B3A92A532F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27914323-967B-4A91-AFAA-90729C907F2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27914323-967B-4A91-AFAA-90729C907F2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27914323-967B-4A91-AFAA-90729C907F2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27914323-967B-4A91-AFAA-90729C907F2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
