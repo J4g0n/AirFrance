@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AirFrance_BibliothequeDeClasse;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +16,36 @@ namespace AirFrance_Desktop
         public FenConsultationVols()
         {
             InitializeComponent();
+
+            List<Aeroport> aeroports = Aeroport.lstAeroport();
+            
+            foreach (Aeroport a in aeroports) 
+            {
+                cmb_AeroportDepart.Items.Add(a.Code);
+                cmb_AeroportArrivee.Items.Add(a.Code);
+            }
         }
 
         private void btn_Rechercher_Click(object sender, EventArgs e)
         {
-            //List<Voyage> listVoyages = Voyage
+            string aeroportDepart = cmb_AeroportDepart.SelectedItem.ToString();
+            string aeroportArrivee = cmb_AeroportArrivee.SelectedItem.ToString();
+
+            List<Voyage> listVoyages = Voyage.lstVoyages(aeroportDepart, aeroportArrivee);
+
+            grid_Voyages.Rows.Clear();
+            foreach (Voyage v in listVoyages)
+            {
+                foreach (Escale escale in v.EscalesVoyage)
+                {
+                    string[] lignes = {
+                        v.Numero.ToString(),
+                        escale.Ordre.ToString(),
+                        escale.NumeroVol
+                    };
+                    grid_Voyages.Rows.Add(lignes);
+                }
+            }
         }
     }
 }

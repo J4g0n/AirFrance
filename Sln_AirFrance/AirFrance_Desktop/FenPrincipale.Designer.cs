@@ -77,13 +77,14 @@
             // acheterBilletToolStripMenuItem1
             // 
             this.acheterBilletToolStripMenuItem1.Name = "acheterBilletToolStripMenuItem1";
-            this.acheterBilletToolStripMenuItem1.Size = new System.Drawing.Size(144, 22);
+            this.acheterBilletToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.acheterBilletToolStripMenuItem1.Text = "&Acheter billet";
+            this.acheterBilletToolStripMenuItem1.Click += new System.EventHandler(this.acheterBilletToolStripMenuItem1_Click);
             // 
             // senregistrerToolStripMenuItem1
             // 
             this.senregistrerToolStripMenuItem1.Name = "senregistrerToolStripMenuItem1";
-            this.senregistrerToolStripMenuItem1.Size = new System.Drawing.Size(144, 22);
+            this.senregistrerToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.senregistrerToolStripMenuItem1.Text = "&S\'enregistrer";
             // 
             // majDesDonnéesToolStripMenuItem

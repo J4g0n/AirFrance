@@ -32,5 +32,11 @@ namespace AirFrance_Desktop
         {
 
         }
+
+        private void acheterBilletToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FenConsultationVols fenConsultation = new FenConsultationVols();
+            fenConsultation.Show();
+        }
     }
 }
